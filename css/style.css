@@ -1,0 +1,37 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 16px; }
+
+body {
+  font-weight: 400;
+  box-sizing: border-box; }
+
+button {
+  border: 5px dashed red; }
+
+.data {
+  font-size: 30px;
+  padding: 5px;
+  border: 1px solid greenyellow; }
+
+.dataDiv, p, b {
+  font-size: 20px;
+  padding: 5px;
+  margin: 10px; }
+
+p {
+  background-color: cadetblue;
+  color: red; }
+  @media screen and (max-width: 991px) {
+    p {
+      font-size: 14px; } }
+
+b {
+  background-color: brown;
+  color: red; }

@@ -1,0 +1,51 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 16px;
+}
+
+
+body{
+    font-weight: 400;
+    box-sizing: border-box;
+}
+
+button{
+    border: $border-data;
+}
+
+.data{
+    font-size: 30px;
+    padding: 5px;
+    border: 1px solid greenyellow;
+}
+
+
+// p{
+//    color: map-get($colors ,main);
+//    @extend .data;
+// }
+
+// b{
+//     color: map-get($colors, secondary);
+//     @extend .data;
+// }
+
+// div{
+//     // background-color: aqua;
+//    @include newDatas();
+
+//     @include minWidth(991px){
+//         font-size: 15px;
+//     }
+   
+// }
+
+
+
