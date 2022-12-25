@@ -1,0 +1,46 @@
+.heading__nav-language{
+
+   
+    &>a{
+        color: $color-white;
+    }
+
+    &>a:hover{
+        color: $color-primary;
+        transition: ease .5s;
+    }
+
+
+    &--main{
+      position: relative;
+      transition: ease-in-out .5s;
+     
+    }
+
+
+    &--main:hover &--child{
+        display: block;
+    }
+
+
+    &--child{
+      background: red;
+      padding: 5px 8px;
+      position: absolute;
+      top: 80%;
+      
+    //   left: 0;
+      padding-left: 0px;
+    //   display: none;
+      
+    transition: ease .2s;
+    }
+
+
+
+
+
+
+
+
+}

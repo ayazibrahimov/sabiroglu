@@ -1,31 +1,7 @@
-
-.dataDiv{
-    font-size: 20px;
-    padding:5px;
-    margin: 10px;
+.heading{
+   width: 100%;
+   height: 80vh;
+   background-image: url('i');
 }
 
-@mixin newData(){
-    color: red;
-}
 
-@mixin withChanfe($data){
-  @media screen and(max-width:$data){
-     @content
-  }
-}
-
-p{
-    background-color: cadetblue; 
-    @extend .dataDiv;
-    @include  newData();  
-    @include  withChanfe(991px){
-        font-size: 14px;
-    }
-}
-
-b{
-    background-color: brown;
-    @extend .dataDiv;
-    @include newData();
-}

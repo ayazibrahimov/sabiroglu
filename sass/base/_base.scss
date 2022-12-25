@@ -12,20 +12,18 @@ html{
 
 
 body{
-    font-weight: 400;
     box-sizing: border-box;
 }
 
-button{
-    border: $border-data;
+
+ul{
+    list-style: none;
 }
 
-.data{
-    font-size: 30px;
-    padding: 5px;
-    border: 1px solid greenyellow;
+li>a{
+    text-decoration: none;
+    // color: $color-white;
 }
-
 
 // p{
 //    color: map-get($colors ,main);
