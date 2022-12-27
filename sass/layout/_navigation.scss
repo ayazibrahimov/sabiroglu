@@ -1,8 +1,19 @@
+
+.heading{
+    position: relative;
+}
+
+
 .heading__nav {
 
 
-    background-color: black;
+    background-color: transparent;
     padding: 30px 0;
+    position: absolute;
+    z-index: 222;
+    top: 0;
+    left: 0;
+    right: 0;
 
 
 
@@ -22,7 +33,6 @@
 
     &-list {
         display: flex;
-
     }
 
 
@@ -67,9 +77,6 @@
     &-link:after {
         transform-origin: 0% 50%;
     }
-
-
-
 
     &-searching {
         display: flex;

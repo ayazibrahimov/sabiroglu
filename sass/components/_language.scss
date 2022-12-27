@@ -1,5 +1,7 @@
 .heading__nav-language{
 
+  transition: ease-in .2s;
+
    
     &>a{
         color: $color-white;
@@ -13,18 +15,22 @@
 
     &--main{
       position: relative;
-      transition: ease-in-out .5s;
-     
+      transition: ease-in-out 1s;
+      cursor: pointer;
     }
 
 
-    &--main:hover &--child{
+    &--child{
+      display: none;
+    }
+
+    &--active:hover &--child{
         display: block;
     }
 
 
     &--child{
-      background: red;
+      // background: red;
       padding: 5px 8px;
       position: absolute;
       top: 80%;

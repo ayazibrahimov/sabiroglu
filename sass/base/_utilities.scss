@@ -3,3 +3,80 @@
     text-align: center;
 }
 
+
+.drop__shadow{
+    position: absolute;
+    background-image: url(../../images/Rectangle719.png);
+    z-index: 111;
+    width: 100%;
+    // height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+
+.nav-text{
+    position: relative;
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 25px;
+    color: $color-white;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: ease .5s;
+}
+
+.nav-text:hover{
+    color: $color-primary;
+}
+
+.nav-text::before{
+    content : "";
+    position: absolute;
+    left    : 0;
+    bottom  : -2%;
+    height  : 10px;
+    width   : 70%;
+    border-bottom:3px solid $color-primary;
+}
+
+.nav-text{
+    color:$color-primary;
+}
+
+.nav_active {
+    color: $color-primary;
+    border-bottom: solid 3px $color-primary;
+}
+
+
+//  .nav_active:after {
+//     display: block;
+//     content: '';
+//     border-bottom: solid 3px $color-primary;
+//     transform: scaleX(0.5);
+//     transition: transform 250ms ease-in-out;
+// }
+
+// .nav_active:after {
+//     transform: scaleX(0.7);
+// }
+
+
+// .nav_active:after {
+//     transform-origin: 0% 50%;
+// }
+
+
+
+
+
+
+
+
+
+
+
+/////////

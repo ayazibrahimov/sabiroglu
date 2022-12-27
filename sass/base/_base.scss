@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    // overflow-x: hidden;
 }
 
 html{
@@ -13,11 +14,14 @@ html{
 
 body{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif !important;
+    overflow-x: hidden;
 }
 
 
 ul{
     list-style: none;
+    padding-left: 1rem !important;
 }
 
 li>a{
