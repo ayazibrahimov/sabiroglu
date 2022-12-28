@@ -20,12 +20,28 @@ ul {
 li > a {
   text-decoration: none; }
 
+a {
+  text-decoration: none; }
+
 .section-headings {
   font-style: normal;
   font-weight: 600;
   font-size: 36px;
   line-height: 54px;
   color: #1C1E31; }
+
+.blog__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #696871; }
+
+.blog__time {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  color: #C4C4C4; }
 
 .u-center-text {
   text-align: center; }
@@ -88,6 +104,22 @@ li > a {
 
 .main-button:hover {
   background-color: #E33F0B; }
+
+.blog__link {
+  display: inline-block; }
+  .blog__link > a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-decoration: none;
+    color: #FF3D00; }
+  .blog__link > a:hover {
+    color: #E33F0B; }
+  .blog__link .blog__link-arrow {
+    display: inline-block;
+    transition: 0.1s ease-in; }
+  .blog__link > a:hover .blog__link-arrow {
+    transform: translateX(50%); }
 
 .heading__nav-language {
   transition: ease-in .2s; }
@@ -161,6 +193,32 @@ li > a {
 
 .header-carousel .owl-dots .active span {
   background-color: #fff !important; }
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .footer .footer__box--height, .footer .footer__logo, .footer .footer__main, .footer .footer__about, .footer .footer__policy, .footer .footer__contact {
+    min-height: 150px; }
+  .footer__logo {
+    display: flex;
+    align-items: flex-start; }
+  .footer__list {
+    padding-left: 0px !important; }
+  .footer__items > a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #999FAE; }
+  .footer__title {
+    margin-top: 10px;
+    margin-bottom: 0px !important;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000; }
+  .footer__items {
+    margin: 10px 0; }
 
 .heading {
   position: relative; }
@@ -297,6 +355,13 @@ li > a {
     color: #b9b5b5;
     z-index: 333; }
 
+.partner-carousel__box {
+  margin: 0 15px;
+  position: relative; }
+
+.owl-carousel .owl-item .partner-carousel__box a > img {
+  width: 90% !important; }
+
 #info {
   background-color: #FBFBFB;
   padding: 80px 0 40px 0; }
@@ -308,3 +373,11 @@ li > a {
 .heading {
   width: 100%;
   height: 100vh; }
+
+#blog {
+  padding: 40px 0;
+  background-color: #fff; }
+
+footer {
+  background-color: #FBFBFB;
+  padding: 40px 0; }

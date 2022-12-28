@@ -29,6 +29,10 @@ li>a{
     // color: $color-white;
 }
 
+a{
+    text-decoration: none;
+}
+
 // p{
 //    color: map-get($colors ,main);
 //    @extend .data;

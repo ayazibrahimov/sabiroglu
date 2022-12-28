@@ -19,7 +19,7 @@ $(document).ready(function(){
         autoplayTimeout:1500,
         autoplayHoverPause:true,
         // autoplayHoverPause:true,
-        // dots:true,
+        dots:false,
         // nav:true,
         responsive:{
             600:{

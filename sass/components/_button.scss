@@ -1,4 +1,4 @@
-.main-button{
+.main-button {
     width: 150px;
     height: 56px;
     left: 171px;
@@ -17,8 +17,8 @@
 }
 
 
-.main-button:hover{
-   background-color: $color-primary-dark;
+.main-button:hover {
+    background-color: $color-primary-dark;
 }
 
 
@@ -27,6 +27,32 @@
 // }
 
 
+.blog__link {
+
+    display: inline-block;
+
+    &>a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        text-decoration: none;
+        color: $color-primary;
+    }
+
+    &>a:hover {
+        color: $color-primary-dark;
+    }
+
+    .blog__link-arrow {
+        display: inline-block;
+        transition: 0.1s ease-in;
+    }
+     &>a:hover .blog__link-arrow {
+        transform: translateX(50%);
+    }
+
+
+}
 
 
 
