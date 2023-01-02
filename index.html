@@ -42,10 +42,29 @@
                 <div class="heading__nav-content">
                     <ul class="heading__nav-list">
                         <li class="heading__nav-item"><a href="" class="nav-text">Baş Səhifə</a></li>
-                        <li class="heading__nav-item"><a href="" class="heading__nav-link">Haqqımızda</a></li>
+                        <li class="heading__nav-item"><a href="" class="heading__nav-link">Haqqımızda</a>
+
+                              <ul class="drop__box-content">
+                                <li><a href="">Biz kimik?</a></li>
+                                <li><a href="">Maddi-Texniki imkanlarımız</a></li>
+                                <li><a href="">Missiya, Baxış və Dəyərlərimiz</a></li>
+                                <li><a href="">Şirkə tarixçəsi</a></li>
+                             </ul>
+            
+                           
+                        </li>
                         <li class="heading__nav-item"><a href="" class="heading__nav-link">Fəaliyyət
                                 istiqamətləri</a></li>
-                        <li class="heading__nav-item"><a href="" class="heading__nav-link">Siyasətlərimiz</a></li>
+                        <li class="heading__nav-item"><a href="" class="heading__nav-link">Siyasətlərimiz</a>
+                        
+                            <ul class="drop__box-content">
+                                <li><a href="">SƏTƏM siyasəti</a></li>
+                                <li><a href="">Keyfiyyət siyasəti</a></li>
+                                <li><a href="">Davamlılıq siyasəti</a></li>
+                                <li><a href="">İnformasiya təhlükəsizliyi siyasəti</a></li>
+                             </ul>
+                             
+                        </li>
                         <li class="heading__nav-item"><a href="" class="heading__nav-link">Layihələr</a></li>
                         <li class="heading__nav-item"><a href="" class="heading__nav-link">Əlaqə</a></li>
                     </ul>
@@ -54,11 +73,18 @@
 
                 <div class="heading__nav-searching">
                     <div class="heading__nav-search">
-                        <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                        <a href=""><i class="fa-solid fa-magnifying-glass heading__nav-search--glass"></i>
+                            <i class="fa-solid fa-xmark fa-xl heading__nav-cancel box--closed"></i>
+                        </a>
+                        <div class="heading__nav-search--box">
+                            <!-- <i class="fa fa-user icon heading__nav-search--icon"></i> -->
+                            <i class="fa-solid fa-magnifying-glass heading__nav-search--icon"></i>
+                            <input class="input-field  heading__nav-search--input" type="text">
+                        </div>
                     </div>
 
                     <div class="heading__nav-language">
-                        <ul class="heading__nav-language--main">
+                        <!-- <ul class="heading__nav-language--main">
 
                             <li class="heading__nav-language"><a href="" class="heading__nav-language--active">AZ</a></li>
                             <ul class="heading__nav-language--child">
@@ -67,7 +93,14 @@
                                 <li class="heading__nav-language"><a href="">RUS</a></li>
 
                             </ul>
-                        </ul>
+                        </ul> -->
+                        <select id="countrySelect" class="selected_country" name="countrySelect">
+                            <option  selected>AZ</option>
+                            <option>EN</option>
+                            <option>RU</option>
+                            <!-- <option>France</option> -->
+                          </select>
+                          
                     </div>
 
                 </div>
@@ -235,6 +268,7 @@
                         <h2 class="section-headings mb-3">Fəaliyyət İstiqamətləri</h2> 
                       </div>
                       <div class="col-md-6">
+                       <a href="">
                         <div class="activity__box">
                             <div class="activity-overlay"></div>
                             <div class="activity__box--1">
@@ -246,29 +280,26 @@
                                 </div>
 
                             </div>
-
                             
-                             
                         </div>
+                       </a>
                     </div>  
                     <div class="col-md-6">
-                        <div class="activity__box">
+                         <a href="">
+                            <div class="activity__box">
                             
-                            <div class="activity-overlay"></div>
-                            <div class="activity__box--2">
-                                
-                                    
-                                    <div class="activity__info">
-                                        <div class="activity__logo"><img src="./images/Group (2).png" alt=""></div>
-                                        <h4 class="activity__title">Ticarət</h4>
-                                        <p class="activity__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
-                                   </div>
-
-
+                                <div class="activity-overlay"></div>
+                                <div class="activity__box--2">
+                                                               
+                                        <div class="activity__info">
+                                            <div class="activity__logo"><img src="./images/Group (2).png" alt=""></div>
+                                            <h4 class="activity__title">Ticarət</h4>
+                                            <p class="activity__text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+                                       </div>
+    
+                                </div>                     
                             </div>
-
-                     
-                        </div>
+                         </a>
                     </div> 
                   </div>
               </div>
@@ -412,10 +443,12 @@
             <div class="footer">
 
                 <div class="footer__logo">
-                      <img src="./images/Layer 1.png" alt="">
+                      <div class="footer__logo-box">
+                        <img src="./images/Layer 1.png" alt="">
+                      </div>
                 </div>
                 <div class="footer__main">
-                    <p class="footer__title">Əsas səhifələr</p>
+                    <span class="footer__title">Əsas səhifələr</span>
                     <ul class="footer__list">
                         <li class="footer__items"><a href="">Ana səhifə</a></li>
                         <li class="footer__items"><a href="">Layihələr</a></li>
@@ -424,32 +457,44 @@
                     </ul>
                 </div>
                 <div class="footer__about">
-                    <p class="footer__title">Əsas səhifələr</p>
+                    <span class="footer__title">Haqqımızda</span>
                     <ul class="footer__list">
-                        <li class="footer__items"><a href="">Ana səhifə</a></li>
-                        <li class="footer__items"><a href="">Layihələr</a></li>
-                        <li class="footer__items"><a href="">Fəaliyyət İstiqamətləri</a></li>
-                        <li class="footer__items"><a href="">Şirkət Xəbərləri</a></li>
+                        <li class="footer__items"><a href="">Biz kimik</a></li>
+                        <li class="footer__items"><a href="">Maddi-Texniki imkanlarımız</a></li>
+                        <li class="footer__items"><a href="">Missiya, Baxış və Dəyərlərimiz</a></li>
+                        <li class="footer__items"><a href="">Şirkət tarixçəsi</a></li>
                     </ul>
                 </div>
                 <div class="footer__policy">
-                    <p class="footer__title">Əsas səhifələr</p>
+                    <span class="footer__title">Siyasətimiz</span>
                     <ul class="footer__list">
-                        <li class="footer__items"><a href="">Ana səhifə</a></li>
-                        <li class="footer__items"><a href="">Layihələr</a></li>
-                        <li class="footer__items"><a href="">Fəaliyyət İstiqamətləri</a></li>
-                        <li class="footer__items"><a href="">Şirkət Xəbərləri</a></li>
+                        <li class="footer__items"><a href="">SATƏM siyasətimiz</a></li>
+                        <li class="footer__items"><a href="">Keyfiyyət siyasəti</a></li>
+                        <li class="footer__items"><a href="">Davamlılıq siyasəti</a></li>
+                        <li class="footer__items"><a href="">İnformasiya təhlükəsizliyi siyasəti</a></li>
                     </ul>
                 </div>
                 <div class="footer__contact">
-                    <p class="footer__title">Əlaqə</p>
-                    <ul class="footer__list">
-                        <div></div>
+                    <span class="footer__title">Əlaqə</span>
+                    <ul class="footer__list footer__list-social">
+                       <a href=""> <li class="footer__media"><img src="./images/facebook 1.svg" alt=""></li></a>
+                        <a href=""><li class="footer__media"><a href=""><img src="./images/instagram 1.svg" alt=""></a></li></a>
+                        <a href=""><li class="footer__media"><a href=""><img src="./images/linkedin 1.svg" alt=""></a></li></a>
                     </ul>
                 </div>
 
             </div>
 
+        </div>
+
+        <hr>
+
+        <div class="container d-flex justify-content-between align-items-center">
+           <p class="footer__last-par">Copyright 2023 - Bütün Hüquqlar Qorunur.</p>
+           <div class="footer__upper">
+            <a href=""></a>
+            <i class="fa-solid fa-arrow-up"></i>
+           </div>
         </div>
     </footer>
 
@@ -459,6 +504,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>     
      <script src="lib/owl-carousel/owl.carousel.min.js"></script>
      <script src="js/slider.js"></script>
+     <script src="js/nav.js"></script>
+     <script src="js/scroll.js"></script>
     
 </body>
 

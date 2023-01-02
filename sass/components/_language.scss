@@ -24,7 +24,7 @@
       display: none;
     }
 
-    &--active:hover &--child{
+    &--active:hover .heading__nav-language--child{
         display: block;
     }
 
@@ -42,11 +42,23 @@
     transition: ease .2s;
     }
 
+    .selected_country{
+      background-color: transparent;
+      color: white;
+      outline: none;
+      border: none;
+      cursor: pointer;
 
 
-
-
-
-
+      &>option{
+        color: $color-primary;
+        cursor: pointer;
+      }
+    }
 
 }
+
+
+
+
+

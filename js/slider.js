@@ -3,10 +3,10 @@ $(document).ready(function(){
         items:1,
         loop:true,
         margin:10,
-        // autoplay:true,
-        // autoplayTimeout:3000,
+        autoplay:true,
+        autoplayTimeout:3000,
         // autoplayHoverPause:true,
-        // dots:true,
+        dots:true,
         // nav:true,
     });
   });
@@ -15,10 +15,10 @@ $(document).ready(function(){
         items:4,
         loop:true,
         margin:10,
-        // autoplay:true,
+        autoplay:true,
         autoplayTimeout:1500,
         autoplayHoverPause:true,
-        // autoplayHoverPause:true,
+        autoplayHoverPause:true,
         dots:false,
         // nav:true,
         responsive:{
