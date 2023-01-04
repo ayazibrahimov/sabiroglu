@@ -14,6 +14,14 @@
     letter-spacing: 1px;
     text-decoration: none;
     color: $color-white;
+
+
+    @include tab-port(991px) {
+        width: 110px;
+        height: 44px;
+        font-weight: 500;
+        font-size: 15px;
+    }
 }
 
 
@@ -37,6 +45,11 @@
         line-height: 30px;
         text-decoration: none;
         color: $color-primary;
+
+        @include tab-port(991px) {
+            font-size: 15px;
+        }
+
     }
 
     &>a:hover {
@@ -47,7 +60,8 @@
         display: inline-block;
         transition: 0.1s ease-in;
     }
-     &>a:hover .blog__link-arrow {
+
+    &>a:hover .blog__link-arrow {
         transform: translateX(50%);
     }
 

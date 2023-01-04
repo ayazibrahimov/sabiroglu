@@ -3,7 +3,7 @@
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url(../../images/image_2.png);
+    background-image: url(../../images/image2-min.png);
     background-size: cover;
     background-position: left;
 
@@ -17,6 +17,13 @@
          color: $color-white;
          z-index: 333;
         // margin: auto 0;
+
+
+        @include tab-port(992px){
+            left: 8%;
+        }
+
+
     }
 
     &-heading{
@@ -26,6 +33,13 @@
         z-index: 111;
         width: 100%;
         display: inline-block;
+
+        @include tab-port(992px){
+            letter-spacing: 2px;
+        }
+
+
+
     }
 
     &-heading--back::before{
@@ -47,6 +61,15 @@
         font-size: 16px;
         line-height: 24px;
         color: rgba(255, 255, 255, 0.8);
+
+
+        @include tab-port(992px){
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+
+
     }
 
 }

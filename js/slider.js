@@ -3,7 +3,7 @@ $(document).ready(function(){
         items:1,
         loop:true,
         margin:10,
-        autoplay:true,
+        // autoplay:true,
         autoplayTimeout:3000,
         // autoplayHoverPause:true,
         dots:true,
@@ -22,8 +22,14 @@ $(document).ready(function(){
         dots:false,
         // nav:true,
         responsive:{
-            600:{
+            1500:{
+                items:5
+            },
+            991:{
                 items:4
+            },
+            600:{
+                items:3
             }
         }
     });

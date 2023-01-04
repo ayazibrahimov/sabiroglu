@@ -10,7 +10,7 @@
 
 
     &__box--1 {
-        background: url(../../images/activityimg2.png);
+        background: url(../../images/activityimg2-min.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -27,7 +27,7 @@
     }
 
     &__box--2 {
-        background-image: url(../../images/activityimg1.png);
+        background-image: url(../../images/activityimg1-min.png);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -58,6 +58,14 @@
         display: flex;
         flex-direction: column;
         padding: 5px 40px;
+
+
+        @include tab-port(991px){
+            padding: 5px 20px;
+
+        }
+
+
     }
 
     &__logo{

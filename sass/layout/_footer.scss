@@ -2,8 +2,14 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     // flex-wrap: wrap;
+
+
+    
+
+
 
     .footer__box--height {
         min-height: 150px;
@@ -12,8 +18,17 @@
     &__logo {
         display: flex;
         align-items: flex-start;
+        flex-shrink: 1;
 
         @extend .footer__box--height;
+
+
+        @include tab-port(991px){
+            order: -2;
+            width: 60%;
+        }
+
+
     }
 
     &__main {
@@ -32,6 +47,16 @@
 
     &__contact {
         @extend .footer__box--height;
+        width: 40%;
+        
+        @include tab-port(991px){
+            order: -1;
+            // flex-shrink: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 15px;
+        }
 
     }
 

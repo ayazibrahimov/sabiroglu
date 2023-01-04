@@ -4,7 +4,7 @@
 }
 
 
-.drop__shadow{
+.drop__shadow {
     position: absolute;
     background-image: url(../../images/Rectangle719.png);
     z-index: 111;
@@ -16,7 +16,7 @@
 }
 
 
-.nav-text{
+.nav-text {
     position: relative;
     color: $color-primary;
     font-weight: 500;
@@ -28,23 +28,48 @@
     transition: ease .5s;
 }
 
-.nav-text:hover{
+.nav-text:hover {
     color: $color-primary;
+
+
+    @include tab-port(991px){
+        color: black;
+    }
+
+
+}
+.nav-text {
+    color: $color-primary;
+
+    @include tab-port(991px) {
+        font-weight: 600;
+        font-size: 14px;
+        color: black;
+    }
 }
 
-.nav-text::before{
-    content : "";
+.nav-text::before {
+    content: "";
     position: absolute;
-    left    : 0;
-    bottom  : -2%;
-    height  : 10px;
-    width   : 70%;
-    border-bottom:3px solid $color-primary;
+    left: 0;
+    bottom: -2%;
+    height: 10px;
+    width: 70%;
+    border-bottom: 3px solid $color-primary;
+
+
+    @include tab-port(991px) {
+        content: "";
+        position: static;
+        // left: 0;
+        // bottom: 0;
+        // height: 5px;
+        // width: 100%;
+        // border-bottom: 3px solid;
+    }
+
 }
 
-.nav-text{
-    color:$color-primary;
-}
 
 .nav_active {
     color: $color-primary;

@@ -6,11 +6,39 @@
 
 [1200 - 1800] - Normal style
 1800px+ -Big Desktop
-
-
-
-
 */
+
+
+
+@mixin tab-land($witdh){
+   @media (max-width: $witdh){
+       @content;
+   }
+}
+
+
+
+@mixin tab-port($witdh){
+    @media (max-width: $witdh){
+        @content;
+    }
+ }
+
+
+@mixin tab-min($witdh){
+    @media (max-width: $witdh){
+        @content;
+    }
+ }
+
+
+@mixin mobile($witdh){
+    @media (max-width: $witdh){
+        @content;
+    }
+ }
+
+
 
 
 

@@ -3,8 +3,31 @@
     // margin-top: 80px;
 
 
+    @include tab-min(800px){
+        flex-direction: column;
+    }
+
+
+    .info__button{
+
+
+        @include tab-port(991px){
+            justify-content: flex-start !important;
+        }
+
+
+    }
+
+
     &__text {
         padding: 0px 80px;
+
+
+        @include tab-min(800px){
+            padding: 0px 35px;
+        }
+
+
     }
 
     &__text>p {
@@ -24,9 +47,15 @@
         font-size: 36px;
         line-height: 54px;
         color: $color-secondary-dark;
+
+        @include tab-min(800px){
+          display: none;
+        }
+
     }
 
-    &__text-heading:before {
+
+    &__text-heading::before {
         content: "";
         position: absolute;
         top: -15%;
@@ -37,13 +66,46 @@
     }
 
 
+    .info__text-data{
+        position: relative;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 54px;
+        padding-left: 30px;
+        color: $color-secondary-dark;  
+        display: none; 
 
-    // &__img{
-    //     flex-shrink: 3;
-    // }
 
-    &__img>img {
-        // width: 100%;
+        @include tab-min(800px){
+            display: block;
+        }
+
+    }
+
+    .info__text-data::before{
+        content: "";
+        position: absolute;
+        top: -15%;
+        left: 30px;
+        width: 40px;
+        height: 6px;
+        background-color: $color-primary;
+    }
+
+
+
+    &__img{
+        @include tab-min(800px){
+            order: -1;
+        }
+    }
+
+    &__img >img {
+        @include tab-min(800px){
+            width: 90%;
+            margin: 15px  30px;
+        }
     }
 
 
