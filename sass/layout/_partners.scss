@@ -1,11 +1,19 @@
 .partner {
 
 
+    position: relative;
+
+
     &-carousel__box {
 
         margin: 0 15px;
         position: relative;
 
+    }
+
+
+    @include mobile(600px){
+        margin-bottom: 20px;
     }
 
 

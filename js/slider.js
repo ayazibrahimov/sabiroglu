@@ -28,9 +28,13 @@ $(document).ready(function(){
             991:{
                 items:4
             },
-            600:{
+            450:{
                 items:3
+            },
+            100:{
+                items:2
             }
+
         }
     });
   });

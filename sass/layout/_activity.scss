@@ -2,10 +2,25 @@
 
     margin: 80px 0;
 
+    @include mobile(600px) {
+        margin: 40px 0;
+    }
+
+
+
+
     &__box {
         min-height: 314px;
         position: relative;
         background: url(../../images/activityimg1.png);
+
+        @include mobile(600px) {
+            min-height: 260px;
+        }
+        @include mobile-mini(450px) {
+            min-height: 210px;
+        }
+
     }
 
 
@@ -60,16 +75,27 @@
         padding: 5px 40px;
 
 
-        @include tab-port(991px){
+        @include tab-port(991px) {
             padding: 5px 20px;
+        }
 
+        @include mobile(600px) {
+            padding: 5px 10px;
         }
 
 
     }
 
-    &__logo{
+    &__logo {
         z-index: 333;
+    }
+
+    &__logo > img {
+      
+        @include mobile(600px){
+            width: 20%;
+        }
+
     }
 
     &__title {
@@ -88,5 +114,12 @@
         line-height: 20px;
         color: #b9b5b5;
         z-index: 333;
+
+
+
+        @include mobile(600px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
     }
 }

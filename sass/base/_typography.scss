@@ -6,7 +6,7 @@
     color: $color-secondary-dark;
 
 
-    @include tab-port(991px){
+    @include tab-port(991px) {
         font-size: 30px;
     }
 
@@ -21,6 +21,11 @@
     color: #696871;
 
 
+    @include mobile-mini(450px) {
+        font-size: 13px;
+        line-height: 16px;
+    }
+
 
 
 }
@@ -30,6 +35,13 @@
     font-size: 12px;
     line-height: 18px;
     color: #C4C4C4;
+
+
+    @include mobile-mini(450px) {
+        font-size: 9px;
+    }
+
+
 }
 
 
@@ -38,38 +50,40 @@
     height: 100vh;
     width: 100%;
     // overflow: hidden !important;
-    position: fixed; /* Stay in place */
-    z-index: 55; /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    z-index: 55;
+    /* Sit on top */
     left: 0;
     top: 0;
     overflow-y: hidden;
-    background-color: black; /* Black fallback color */
-    background-color: rgba(0,0,0, .5); /* Black w/opacity */
+    background-color: black;
+    /* Black fallback color */
+    background-color: rgba(0, 0, 0, .5);
+    /* Black w/opacity */
     // overflow-x: hidden; /* Disable horizontal scroll */
-    transition: ease-in-out .6s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
- 
-     @include mobile(600px){
+    transition: ease-in-out .6s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+
+    @include mobile(600px) {
         transition: ease-in .5s;
-     }
+    }
 }
 
 
-  .overflowY{
+.overflowY {
     overflow-y: hidden;
     transition: ease-in-out 2s;
-  }
+}
 
 
-  .contentTransfor{
+.contentTransfor {
     transform: translateX(100%);
 }
 
 
 
-.boxContentOpen{
+.boxContentOpen {
     display: block !important;
     transform: translateY(10px) !important;
 }
-
-
-
