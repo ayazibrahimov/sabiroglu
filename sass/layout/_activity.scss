@@ -25,7 +25,7 @@
 
 
     &__box--1 {
-        background: url(../../images/activityimg2-min.png);
+        background: url('../images/activityimg2-min.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -42,7 +42,7 @@
     }
 
     &__box--2 {
-        background-image: url(../../images/activityimg1-min.png);
+        background-image: url('../images/activityimg1-min.png');
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -64,7 +64,7 @@
         right: 0;
         bottom: 0;
         z-index: 111;
-        background: url(../../images/Rectangleoverlay.png);
+        background: url('../images/Rectangleoverlay.png');
     }
 
 
@@ -90,12 +90,10 @@
         z-index: 333;
     }
 
-    &__logo > img {
-      
+    &__logo > img {    
         @include mobile(600px){
             width: 20%;
         }
-
     }
 
     &__title {

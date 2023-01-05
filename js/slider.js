@@ -22,17 +22,17 @@ $(document).ready(function(){
         dots:false,
         // nav:true,
         responsive:{
-            1500:{
-                items:5
+            0:{
+                items:2
             },
-            991:{
-                items:4
-            },
-            450:{
+            480:{
                 items:3
             },
-            100:{
-                items:2
+             768:{
+                items:4
+            },
+              1500:{
+                items:5
             }
 
         }

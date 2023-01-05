@@ -46,6 +46,12 @@
  }
 
 
+ @mixin screen-large($width){
+    @media (min-width: $width){
+        @content;
+    }
+ }
+
 
 
 

@@ -6,7 +6,7 @@
 
 .drop__shadow {
     position: absolute;
-    background-image: url(../../images/Rectangle719.png);
+    background-image: url(../images/Rectangle719.png);
     z-index: 111;
     width: 100%;
     // height: 100vh;
@@ -98,7 +98,7 @@
 .info__text-heading-2::before{
     content: "";
     position: absolute;
-    top: -15%;
+    top: -21%;
     left: 3%;
     width: 40px;
     height: 6px;
@@ -107,7 +107,7 @@
     @include mobile(600px){
         font-size: 24px;
         line-height: 32px;
-        left: 5%;
+        left: 4%;
     }
 }
 
