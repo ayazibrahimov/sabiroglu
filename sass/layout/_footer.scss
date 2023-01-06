@@ -32,7 +32,7 @@
             width: 50%;
         }
 
-        @include screen-large(1200px){
+        @include screen-large(991px){
               width: 20%;
         }
 
@@ -47,7 +47,7 @@
             width: 50%;
         }
 
-        @include screen-large(1200px){
+        @include screen-large(991px){
             width: 20%;
         }
 
@@ -64,7 +64,7 @@
             padding-left: 10px;
         }
 
-        @include screen-large(1200px){
+        @include screen-large(991px){
             width: 20%;
         }
 
@@ -73,7 +73,7 @@
     &__policy {
         @extend .footer__box--height;
 
-        @include screen-large(1200px){
+        @include screen-large(991px){
             width: 20%;
         }
 
@@ -96,7 +96,7 @@
             width: 50%;
         }
 
-        @include screen-large(1200px){
+        @include screen-large(991px){
             width: 20%;
         }
 
