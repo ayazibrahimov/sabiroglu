@@ -32,14 +32,14 @@ cancel.addEventListener('click',function(e){
 document.querySelector('.three-line').addEventListener('click',function(){
     // body.classList.add('overflowY')
     navContent.classList.add('contentTransfor')
-    overlayBox.classList.add('overlay')
+    // overlayBox.classList.add('overlay')
     body.classList.add('overflowY')
 })
 
 
 cancelMob.addEventListener('click',function(){
     navContent.classList.remove('contentTransfor')
-    overlayBox.classList.remove('overlay')
+    // overlayBox.classList.remove('overlay')
     body.classList.remove('overflowY')
 })
 

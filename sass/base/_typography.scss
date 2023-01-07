@@ -36,11 +36,9 @@
     line-height: 18px;
     color: #C4C4C4;
 
-
     @include mobile-mini(450px) {
         font-size: 9px;
     }
-
 
 }
 
@@ -73,17 +71,49 @@
 
 .overflowY {
     overflow-y: hidden;
-    transition: ease-in-out 2s;
 }
 
 
-.contentTransfor {
-    transform: translateX(100%);
-}
-
-
-
-.boxContentOpen {
+.contentTransfor{
+    right: 0 !important;
     display: block !important;
-    transform: translateY(10px) !important;
+    // opacity: 1 !important;
+    animation: slide-down .5s ease-in-out;
+
 }
+
+
+.dark-mode{
+    color: black !important;
+}
+
+.heading__nav-bg--light{
+    background-color: white !important;
+    padding: 0 !important;
+    position: relative !important;
+}
+
+
+.heading__nav-cancel--dark{
+    color: black !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/////////
