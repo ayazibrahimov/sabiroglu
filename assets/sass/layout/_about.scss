@@ -1,0 +1,124 @@
+.info {
+    display: flex;
+    // margin-top: 80px;
+
+
+    @include tab-min(800px){
+        flex-direction: column;
+    }
+
+
+    .info__button{
+
+
+        @include tab-port(991px){
+            margin-right: 15px;
+        }
+
+
+    }
+
+
+    &__text {
+        padding: 0px 80px;
+
+
+        @include tab-min(800px){
+            padding: 0px 35px;
+        }
+
+
+        @include mobile(600px){
+            padding: 0px 45px;
+        }
+
+
+    }
+
+    &__text>p {
+        text-indent: 10px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-text;
+    }
+
+
+    &__text-heading {
+        position: relative;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 54px;
+        color: $color-secondary-dark;
+
+        @include tab-min(800px){
+          display: none;
+        }
+
+    }
+
+
+    &__text-heading::before {
+        content: "";
+        position: absolute;
+        top: -15%;
+        left: 2px;
+        width: 40px;
+        height: 6px;
+        background-color: $color-primary;
+    }
+
+
+    .info__text-data{
+        position: relative;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 54px;
+        padding-left: 30px;
+        color: $color-secondary-dark;  
+        display: none; 
+
+
+        @include tab-min(800px){
+            display: block;
+        }
+        @include mobile(600px){
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+    }
+
+    .info__text-data::before{
+        content: "";
+        position: absolute;
+        top: -15%;
+        left: 30px;
+        width: 40px;
+        height: 6px;
+        background-color: $color-primary;
+    }
+
+
+
+    &__img{
+        @include tab-min(800px){
+            order: -1;
+        }
+    }
+
+    &__img >img {
+        @include tab-min(800px){
+            width: 90%;
+            margin: 10px  30px;
+        }
+        @include mobile(600px){
+            width: 80%;
+            
+        }
+    }
+
+}

@@ -1,0 +1,135 @@
+.activity {
+
+    margin: 80px 0;
+
+    @include mobile(600px) {
+        margin: 40px 0;
+    }
+
+
+
+
+    &__box {
+        min-height: 314px;
+        position: relative;
+        background: url(../../images/activityimg1.png);
+        overflow: hidden;
+
+        @include mobile(600px) {
+            min-height: 260px;
+        }
+        @include mobile-mini(450px) {
+            min-height: 210px;
+        }
+
+    }
+
+
+    // &__box:hover &__box--1{
+    //     -webkit-transform:scale(1.1);
+    //     transform:scale(1.1);
+    // }
+    // &__box:hover &__info{
+    //     -webkit-transform:scale(1);
+    //     transform:scale(1);
+    // }
+
+    &__box--1 {
+        background: url('../images/activityimg2-min.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        transition:all 0.25s ease;
+
+        //    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+    }
+
+    &__box--2 {
+        background-image: url('../images/activityimg1-min.png');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+
+    &-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 111;
+        background: url('../images/Rectangleoverlay.png');
+    }
+
+
+    &__info {
+        // z-index: 222;
+        display: flex;
+        flex-direction: column;
+        padding: 5px 40px;
+
+
+        @include tab-port(991px) {
+            padding: 5px 20px;
+        }
+
+        @include mobile(600px) {
+            padding: 5px 10px;
+        }
+
+
+    }
+
+    &__logo {
+        z-index: 333;
+    }
+
+    &__logo > img {    
+        @include mobile(600px){
+            width: 20%;
+        }
+    }
+
+    &__title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: $color-white;
+        z-index: 333;
+        margin-top: 5px;
+    }
+
+    &__text {
+        // font-weight: 200;
+        font-size: 13px;
+        line-height: 20px;
+        color: #b9b5b5;
+        z-index: 333;
+
+
+
+        @include mobile(600px) {
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}

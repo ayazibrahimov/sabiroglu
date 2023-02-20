@@ -1,0 +1,366 @@
+.heading {
+    position: relative;
+
+
+    @include mobile(600px) {
+        height: 60vh !important;
+    }
+
+}
+
+
+.heading__nav {
+
+    background-color: transparent;
+    padding: 30px 0;
+    position: absolute;
+    z-index: 222;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+
+    &-mob-cancel {
+        visibility: hidden;
+        background-color: white;
+        width: 35px;
+        height: 35px;
+        align-items: center;
+        position: absolute;
+        top: 5%;
+        right: 10%;
+        border-radius: 50%;
+        cursor: pointer;
+        border: 1px solid #d7c5c5;
+
+        @include tab-port(991px) {
+            visibility: visible;
+        }
+
+    }
+
+
+    &-lines {
+        color: white;
+        visibility: hidden;
+        cursor: pointer;
+        // height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+
+
+
+        @include tab-port(991px) {
+            display: block;
+            visibility: visible;
+        }
+
+    }
+
+    // .three-line--white{
+        
+    // }
+    // .three-line--black{
+    //    display: none;
+    // }
+
+
+    &-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 10px 0;
+
+
+        @include tab-port(991px) {
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+    }
+
+
+    &-logo {
+
+        img {
+
+            @include mobile(600px) {
+                width: 85%;
+            }
+
+        }
+    }
+
+
+    &-content {
+
+
+        @include tab-port(991px) {
+            width: 100%;
+            height: 102vh;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(20px);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: none;
+            z-index: 555555;
+            right: -100%;
+            // transform: translateX(100%);
+        }
+
+        @include mobile(600px) {
+            overflow-y: auto;
+            transition: ease-in .3s;
+        }
+
+
+    }
+
+    &-list {
+        display: flex;
+        margin-bottom: 0 !important;
+
+
+        @include tab-port(991px) {
+            flex-direction: column;
+            margin-top: 60px;
+            padding: 0 25px;
+        }
+
+
+    }
+
+    &-item {
+        padding: 15px;
+
+
+
+        @include tab-land(1200px) {
+            padding: 20px 10px;
+        }
+
+
+        @include tab-port(991px) {
+            padding: 10px;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+    }
+
+
+    &-item::before {
+        @include tab-port(991px) {
+            position: absolute;
+            content: "";
+            height: 1px;
+            background-color: #aca8a8;
+            width: 100%;
+            // margin-left: 15px;
+            left: 0;
+            bottom: -10%;
+
+        }
+    }
+
+    &-item--drop::after {
+        @include tab-port(991px) {
+            content: url('../images/Vectorarrow.png');
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 10px;
+        }
+    }
+
+    &-link {
+        // position: static;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        color: $color-white;
+        letter-spacing: 1px;
+        display: inline-block;
+        transition: ease .5s;
+        display: inline-block;
+
+
+        @include tab-land(1200px) {
+            letter-spacing: 0px;
+        }
+
+        @include tab-port(991px) {
+            font-weight: 600;
+            font-size: 14px;
+            color: black;
+        }
+
+    }
+
+
+    &-link:hover {
+        color: $color-primary;
+        transition: ease .5s;
+
+
+        @include tab-land(991px) {
+            color: black;
+        }
+
+    }
+
+
+    &-link::after {
+        display: block;
+        content: '';
+        border-bottom: solid 3px $color-primary;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+
+        @include tab-land(991px) {
+
+            border-bottom: none;
+        }
+
+    }
+
+    &-link:hover:after {
+        transform: scaleX(0.7);
+    }
+
+
+    &-link:after {
+        transform-origin: 0% 50%;
+    }
+
+    &-searching {
+        display: flex;
+        gap: 26px;
+        align-items: center;
+
+        @include mobile(600px) {
+            gap: 8px;
+        }
+    }
+
+
+    &-search {
+        // margin-bottom: 15px;
+        transition: ease-in .5s;
+        position: relative;
+
+
+        a>i {
+            color: $color-white;
+        }
+
+    }
+
+    &-search--icon {
+        position: absolute;
+        top: 12px;
+        right: 10px;
+    }
+
+    &-search--input {
+        outline: none;
+        border: none;
+        padding: 0px 5px;
+        font-size: 15px;
+
+        margin: 8px 0;
+        // display: inline-block;
+        border: 1px solid #ccc;
+
+    }
+
+    &-search--box { ////search box
+        position: absolute;
+        opacity: 1;
+        left: -174px;
+        bottom: -40px;
+        transition: all .6s ease-in-out;
+    }
+
+
+    // .color-white{
+    //     color: black !important;
+    // }
+
+    &-search--glass {  /////search/////
+        color: white;
+        transition: all .6s ease;
+        // transform: translateX(21px);
+    }
+
+
+}
+
+
+.heading__nav-cancel { //////
+    color: $color-primary;
+    transition: all .6s ease;
+}
+
+.box--opened {
+    display: block;
+    opacity: 1;
+    transition: all .6s linear;
+}
+
+.box--closed {
+    display: none;
+    // opacity: 0;
+    transition: all .6s linear;
+    // transform: translateX(-22px);
+}
+
+
+
+.heading__nav--1 {
+    position: relative;
+    background-color: white !important;
+    padding: 0px !important;
+    -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+
+
+    @include mobile(600px){
+        padding: 8px !important;  
+    }
+
+
+}
+
+
+.heading__nav-link--new {
+    color: black ;
+}
+
+
+
+
+
+
+
+// .contentTransfor2{
+//     transform: translateX(0);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////

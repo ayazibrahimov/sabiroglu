@@ -1,0 +1,28 @@
+.sticky{
+    position: fixed !important;
+    background-color: white !important;
+    padding: 6px 0 !important;
+    z-index: 10000 !important;
+    -webkit-animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+    animation: 1000ms ease-in-out 0s normal none 1 running fadeInDown;
+    -webkit-box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+
+
+
+    .heading__nav-link{
+        @media screen and (min-width:991px){
+             color: black;
+        }
+    }
+
+}
+
+.stickydata{
+    position: fixed !important;
+    width: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
